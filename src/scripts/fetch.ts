@@ -72,18 +72,22 @@ function initForm(): void {
   form.addEventListener("submit", async (event: Event) => {
     event.preventDefault();
 
+    const submit = form.querySelector<HTMLButtonElement>(".readme-submit");
+
     resetOutput();
     setStatus("Loading README...");
+    if (submit) submit.disabled = true;
 
     try {
       const { owner, repo } = validateInputs(form);
       const html = await fetchReadme(owner, repo);
-
       showOutput(html);
       setStatus("README loaded successfully.");
     } catch (error: unknown) {
       resetOutput();
       setStatus(error instanceof Error ? error.message : "Unable to load README.");
+    } finally {
+      if (submit) submit.disabled = false;
     }
   });
 }
