@@ -36,7 +36,7 @@ function validateInputs(form: HTMLFormElement): { owner: string; repo: string } 
 }
 
 function buildApiUrl(owner: string, repo: string): string {
-  const url = new URL("api/readme", window.location.origin + import.meta.env.BASE_URL);
+  const url = new URL("api/readme", window.location.origin);
   url.searchParams.set("owner", owner);
   url.searchParams.set("repo", repo);
   return url.toString();
