@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Readme API Demo</title>
+  <meta name="description" content="Live demonstration for the readme-api project."/>
+
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-  <main>WIP</main>
+  <header>
+    <h1>Readme API Demo</h1>
+    <p>Live demonstration for <a href="https://github.com/masonlet/readme-api" target="_blank" rel="noopener noreferrer">readme-api</a></p>
+  </header>
+  <main id="readme-page">
+    <form id="readme-form" action="#" method="get">
+      <label for="owner">GitHub username</label>
+      <input
+        id="owner"
+        name="owner"
+        class="readme-input"
+        type="text"
+        placeholder="masonlet"
+        autocomplete="off"
+      >
+
+      <label for="repo">Repository</label>
+      <input
+        id="repo"
+        name="repo"
+        class="readme-input"
+        type="text"
+        placeholder="readme-api"
+        autocomplete="off"
+      >
+
+      <button type="button" class="readme-submit">Fetch README</button>
+    </form>
+  </main>
 </body>
 </html>
