@@ -8,6 +8,7 @@
   <meta name="description" content="Live demonstration for the readme-api project."/>
 
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script type="module" src="./scripts/fetch.ts"></script>
 </head>
 <body>
   <header>
@@ -36,8 +37,13 @@
         autocomplete="off"
       >
 
-      <button type="button" class="readme-submit">Fetch README</button>
+      <button type="submit" class="readme-submit">Fetch README</button>
+      <p id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
     </form>
+    <section id="readme-output" aria-labelledby="output-heading" hidden>
+      <h2 id="output-heading">README Output</h2>
+      <div id="readme-content"></div>
+    </section>
   </main>
 </body>
 </html>
