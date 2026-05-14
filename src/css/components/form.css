@@ -4,7 +4,7 @@ label {
   color: var(--txt);
 }
 
-.readme-input {
+.input {
   padding: 0.75rem 1rem;
   color: var(--txt);
   background-color: var(--bg);
@@ -16,6 +16,6 @@ label {
   transition: border-color 0.2s ease;
 }
 
-.readme-input:focus {
+.input:focus {
   border-color: var(--accent);
 }

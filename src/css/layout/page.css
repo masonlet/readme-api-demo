@@ -1,11 +1,11 @@
-#readme-page {
+.page {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
 
-#readme-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -13,13 +13,3 @@
   max-width: 360px;
   align-self: center;
 }
-
-#readme-output {
-  width: 100%;
-  max-width: 860px;
-  align-self: center;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 2rem;
-}
-
