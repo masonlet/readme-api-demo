@@ -6,6 +6,6 @@
 @import url('layout/page.css');
 @import url('layout/header.css');
 
+@import url('components/buttons.css');
 @import url('components/form.css');
 @import url('components/readme.css');
-

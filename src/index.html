@@ -15,13 +15,13 @@
     <h1>Readme API Demo</h1>
     <p>Live demonstration for <a href="https://github.com/masonlet/readme-api" target="_blank" rel="noopener noreferrer">readme-api</a></p>
   </header>
-  <main id="readme-page">
-    <form id="readme-form" action="#" method="get">
+  <main class="page">
+    <form class="form" action="#" method="get">
       <label for="owner">GitHub username</label>
       <input
         id="owner"
         name="owner"
-        class="readme-input"
+        class="input"
         type="text"
         placeholder="masonlet"
         autocomplete="off"
@@ -31,13 +31,13 @@
       <input
         id="repo"
         name="repo"
-        class="readme-input"
+        class="input"
         type="text"
         placeholder="readme-api"
         autocomplete="off"
       >
 
-      <button type="submit" class="readme-submit">Fetch README</button>
+      <button type="submit" class="btn">Fetch README</button>
       <p id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
     </form>
     <section id="readme-output" aria-labelledby="output-heading" hidden>
