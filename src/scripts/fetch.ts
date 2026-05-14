@@ -72,7 +72,7 @@ function initForm(): void {
   form.addEventListener("submit", async (event: Event) => {
     event.preventDefault();
 
-    const submit = form.querySelector<HTMLButtonElement>(".readme-submit");
+    const submit = form.querySelector<HTMLButtonElement>(".btn");
 
     resetOutput();
     setStatus("Loading README...");
